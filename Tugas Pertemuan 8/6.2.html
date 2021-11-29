@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.2</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        min-height: 100vh;
+        margin: 0%;
+    }
+
+    .container {
+        display: flex;
+        flex: 1;
+    }
+    
+    .container1{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .container2{
+        display: flex;
+        flex: 1;
+    }
+
+    .container2 article{
+        flex: 1;
+        order: 0;
+    }
+
+    .container2 aside{
+        background-color: palegreen;
+        order: 1;
+        flex: 0 0 20vw;
+    }
+
+    .container nav {
+        background-color: pink;
+        flex: 0 0 20vw;
+        order: 0;
+    }
+   
+   header,footer{
+      background-color: yellow;
+      height: 20vh;
+   }
+   
+   header, footer, article, nav, aside{
+       padding: 1em;
+   }
+</style>
+<body>
+    <div class="container">
+        <nav>nav</nav>
+    <div class="container1">
+        <header>header</header>
+        <div class="container2">
+            <aside>aside</aside>
+            <article>articel</article>
+        </div>
+        <footer>footer</footer>
+    
+    </div>
+
+    </div>
+
+</body>
+</html>
